@@ -3,111 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nikhil Krishna - Portfolio</title>
+  <title>Nikhil Krishna | Portfolio</title>
+  
+  <!-- Link to CSS -->
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
 </head>
 <body>
-  <!-- Navbar -->
-  <nav>
-    <h1>Nikhil Krishna</h1>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Hero -->
-  <header class="hero">
-    <h2>👋 Hi, I’m Nikhil</h2>
-    <p>Backend Python Developer | Healthcare | FHIR & ETL | 5+ Years</p>
-    <a href="#projects" class="btn">View My Work</a>
+  <!-- ===== Header Section ===== -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="name">Nikhil Krishna</h1>
+      <p class="tagline">Python Backend Developer | Healthcare | FHIR | ETL</p>
+      <ul class="contact-info">
+        <li>📍 Bengaluru, Karnataka 560072</li>
+        <li>📞 +91-7353677829</li>
+        <li>📧 <a href="mailto:nikhil.krishna1@outlook.com">nikhil.krishna1@outlook.com</a></li>
+        <li>🔗 <a href="https://www.linkedin.com/in/nikhil-krishna-787461143" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
   </header>
 
-  <!-- Stats Section -->
-  <section id="stats">
-    <div class="stats-grid">
-      <div class="stat">
-        <h3 class="counter" data-target="5">0</h3>
-        <p>Years Experience</p>
-      </div>
-      <div class="stat">
-        <h3 class="counter" data-target="12">0</h3>
-        <p>Projects Delivered</p>
-      </div>
-      <div class="stat">
-        <h3 class="counter" data-target="3">0</h3>
-        <p>Healthcare Integrations</p>
-      </div>
-      <div class="stat">
-        <h3 class="counter" data-target="40">0</h3>
-        <p>% Performance Gains</p>
-      </div>
+  <!-- ===== About Section ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        Experienced Back-End Developer with over 5 years of experience delivering scalable and high-performance 
+        server-side solutions for enterprise-level applications. Proven expertise in ETL pipelines, RESTful APIs, 
+        and backend architectures using Python, Flask, and SQL. Skilled in healthcare data standards like FHIR and 
+        EDI X12, with a strong focus on automation, performance tuning, and maintainable code.
+      </p>
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      Experienced Back-End Developer with over 5 years of expertise delivering scalable 
-      and high-performance server-side solutions for enterprise-level applications. 
-      Skilled in ETL pipelines, RESTful APIs, and modular backend architectures using 
-      Python, Flask, and SQL. Adept at healthcare standards (FHIR, EDI X12), data validation, 
-      and automation, with strong focus on clean, maintainable code and performance tuning.
-    </p>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <span>Python</span><span>Flask</span><span>FastAPI</span><span>SQLAlchemy</span>
-      <span>REST APIs</span><span>ETL Pipelines</span><span>Docker</span><span>Git</span>
-      <span>CI/CD - Jenkins</span><span>JSON, XML</span><span>FHIR, HL7, EDI X12</span>
+  <!-- ===== Skills Section ===== -->
+  <section id="skills" class="section dark">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Python • OOP</li>
+        <li>Flask • RESTful APIs</li>
+        <li>API Integration • Design Patterns</li>
+        <li>SQLAlchemy • Query Optimization</li>
+        <li>JSON • XML • XSD • JSON Schema</li>
+        <li>GIT • Jenkins • Docker</li>
+      </ul>
     </div>
   </section>
 
-  <!-- Experience -->
-  <section id="experience">
-    <h2>Experience</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>Senior Software Developer</h3>
-        <h4>Zeomega Infotech, Bengaluru | 09/2019 - Present</h4>
-        <p>
-          • Built scalable ETL pipelines and RESTful APIs powering JIVA Population Health Platform. <br>
-          • Developed e-Prior Authorization (ePA) SMART on FHIR APIs with OAuth2. <br>
-          • Engineered healthcare interoperability solutions transforming EDI X12 transactions to FHIR. <br>
-          • Optimized APIs & ETL jobs for 30–40% performance improvement. <br>
-          • Championed automation, clean code, and team mentoring. 
-        </p>
-      </div>
+  <!-- ===== Experience Section ===== -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Experience</h2>
+      <h3>Senior Software Developer</h3>
+      <p><strong>Zeomega Infotech – Bengaluru, India | Sep 2019 - Present</strong></p>
+      <ul>
+        <li>Designed, developed, and optimized ETL pipelines and real-time data interfaces for healthcare workflows.</li>
+        <li>Built secure, high-performance RESTful APIs for SMART on FHIR application.</li>
+        <li>Integrated OAuth2.0 for HIPAA-compliant authorization flows.</li>
+        <li>Transformed healthcare data between X12-278 EDI and FHIR resources.</li>
+        <li>Led client upgrade initiatives, ensuring smooth adoption and minimal downtime.</li>
+      </ul>
     </div>
   </section>
 
-  <!-- Education -->
-  <section id="education">
-    <h2>Education</h2>
-    <p>Bachelor of Engineering (EEE), 05/2019<br>DSCE – Bengaluru, India</p>
+  <!-- ===== Education Section ===== -->
+  <section id="education" class="section dark">
+    <div class="container">
+      <h2>Education</h2>
+      <p><strong>Bachelor of Engineering (EEE)</strong></p>
+      <p>Dayananda Sagar College of Engineering, Bengaluru — 2019</p>
+    </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>📍 Bengaluru, Karnataka</p>
-    <p>📞 +91-7353677829</p>
-    <p>✉️ <a href="mailto:nikhil.krishna1@outlook.com">nikhil.krishna1@outlook.com</a></p>
-    <p>🔗 <a href="https://linkedin.com/in/nikhil-krishna-787461143" target="_blank">LinkedIn</a></p>
-    <p>💻 <a href="https://github.com/nikhil-krishna-git" target="_blank">GitHub</a></p>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Nikhil Krishna</p>
+  <!-- ===== Footer Section ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Nikhil Krishna | Built with ❤️ using HTML, CSS, and JS</p>
+    </div>
   </footer>
+
+  <!-- Link to JS -->
+  <script src="script.js" defer></script>
 </body>
 </html>

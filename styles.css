@@ -1,19 +1,93 @@
-/* Stats Section */
-#stats {
-  background: #161b22;
-  padding: 3rem 2rem;
+/* General Styling & Color Palette */
+body {
+    background-color: #0c0c0d; /* A very dark, almost black background */
+    color: #f1f5f9; /* Light gray for primary text */
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 2rem;
-  text-align: center;
+
+/* Header & Navigation */
+header {
+    background-color: #1a1a1c; /* A slightly lighter dark shade for the header */
+    border-bottom: 1px solid #2d2d2f;
 }
-.stat h3 {
-  font-size: 2.5rem;
-  color: #58a6ff;
+
+/* Sections & Cards */
+section {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
 }
-.stat p {
-  color: #c9d1d9;
-  margin-top: 0.5rem;
+
+.bg-gray-950 {
+    background-color: #0c0c0d;
 }
+
+.bg-gray-900 {
+    background-color: #1a1a1c;
+}
+
+.bg-gray-800 {
+    background-color: #2d2d2f;
+}
+
+/* Text Colors */
+.text-white {
+    color: #f1f5f9;
+}
+
+.text-green-400 {
+    color: #4ade80; /* A vibrant green for accents */
+}
+
+.text-gray-300 {
+    color: #d1d5db;
+}
+
+.text-gray-400 {
+    color: #9ca3af;
+}
+
+/* Link and Button Styling */
+a.text-green-400 {
+    color: #4ade80;
+}
+
+.bg-green-600 {
+    background-color: #16a34a; /* A darker, more solid green */
+}
+
+.hover\:bg-green-700:hover {
+    background-color: #15803d;
+}
+
+.hover\:text-green-400:hover {
+    color: #4ade80;
+}
+
+/* Hover Effects for Cards */
+.hover\:shadow-green-500\/30:hover {
+    box-shadow: 0 10px 15px -3px rgba(22, 163, 74, 0.3), 0 4px 6px -2px rgba(22, 163, 74, 0.2);
+}
+
+/* Utility Classes */
+.rounded-xl {
+    border-radius: 1rem;
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Animations (already in HTML style tag, but good to keep here for a full CSS file) */
+/*
+@keyframes fade-in {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fade-in 0.8s ease-out;
+}
+*/
